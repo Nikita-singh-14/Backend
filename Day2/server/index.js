@@ -4,7 +4,9 @@ const app = express()
 
 const port = process.env.PORT || 8080;
 
-
+app.get("/", (req, res) => {
+    res.send("hellow world!");
+})
 
 app.get('/api/jokes', (req, res) => {
    const jokes = [
