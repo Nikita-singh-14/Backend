@@ -13,6 +13,12 @@ app.get('/login', (req,res) => {
     res.send('login here');
 })
 
+const githubData = {"awe":"aeew"};
+
+app.get('/github', (req, res) => {
+    res.json(githubData);
+})
+
 app.listen(PORT, () => {
   console.log(`Example app listening on port ${PORT}`)
 })
